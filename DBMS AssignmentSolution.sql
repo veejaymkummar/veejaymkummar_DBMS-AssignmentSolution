@@ -112,7 +112,7 @@ FROM PASSENGER;
 /* Q11 Categorising each price tag into Expensive, Average cost and Cheap basis the conditions in the assignement */
 SELECT Distance, Price,
 case
-When price >1000 then "Expensiveprice"
+When price >1000 then "Expensive"
 When  price <1000 And Price > 500 then "Average Cost"
 else "Cheap"
 end
